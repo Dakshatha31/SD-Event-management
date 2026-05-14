@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idol Decoration | SD Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .service-hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin-top: 60px;
+    }
+    .service-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-row {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 20px 0;
+      justify-content: center;
+    }
+    .gallery-thumb {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      border: 4px solid transparent;
+      object-fit: cover;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .gallery-thumb:hover {
+      transform: scale(1.1);
+      border-color: var(--maroon);
+    }
+    .service-desc {
+      max-width: 700px;
+      margin: 40px auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    .enquiry-btn-container {
+      text-align: center;
+      margin: 40px 0 60px;
+    }
+    .btn-large {
+      padding: 15px 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/icons/Logo.png" alt="SD Management" style="height: 50px;">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <button class="hamburger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B1C1C" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </nav>
+
+  <h1 class="section-heading" style="margin-top: 100px;">Idol Decoration</h1>
+
+  <section class="service-hero">
+    <!-- Banana Leaf Overlay SVGs -->
+    <svg class="banana-leaf-decorate banana-leaf-left" viewBox="0 0 100 200" preserveAspectRatio="none" style="z-index: 10;">
+      <path d="M0,200 Q50,150 50,0 Q10,100 0,200" fill="#2d4013" opacity="0.3"/>
+    </svg>
+    <svg class="banana-leaf-decorate banana-leaf-right" viewBox="0 0 100 200" preserveAspectRatio="none" style="z-index: 10;">
+      <path d="M100,200 Q50,150 50,0 Q90,100 100,200" fill="#2d4013" opacity="0.3"/>
+    </svg>
+    <img src="icons/download (10).jpg" alt="Idol Decoration" class="service-hero-img">
+  </section>
+
+  <div class="container">
+    <p class="service-desc">Beautiful, custom hand-crafted floral and thematic decorations for divine idols to elevate spiritual celebrations and auspicious occasions.</p>
+    
+    <!-- Gallery Row -->
+    <div class="gallery-row">
+      <img src="images/photos/idol/baba.jpeg" class="gallery-thumb" alt="Gallery image">
+      <img src="images/photos/idol/god_fullsteps.jpeg" class="gallery-thumb" alt="Gallery image">
+      <img src="images/photos/idol/idol.jpeg" class="gallery-thumb" alt="Gallery image">
+      <img src="images/photos/idol/idol_pt.jpeg" class="gallery-thumb" alt="Gallery image">
+      <img src="images/photos/idol/nataraja.jpeg" class="gallery-thumb" alt="Gallery image">
+
+    </div>
+
+    <!-- Enquiry Button -->
+    <div class="enquiry-btn-container">
+      <a href="enquiry.html?service=Idol%20Decoration" class="btn btn-large">Send Enquiry on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="birthday.html">Birthday Party</a></li>
+            <li><a href="wedding.html">Wedding</a></li>
+            <li><a href="corporate.html">Corporate Event</a></li>
+            <li><a href="arangetram.html">Arangetram</a></li>
+            <li><a href="return-gift.html">Return Gift</a></li>
+            <li><a href="makeup.html">Makeup</a></li>
+            <li><a href="backdrop.html">Backdrop Design</a></li>
+            <li><a href="rental.html">Rental Enquiry</a></li>
+            <li><a href="idol.html">Idol Decoration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Phone: +91 77089 80490</p>
+          <div class="footer-whatsapp">
+            <a href="https://wa.me/917708980490" target="_blank" style="font-weight: bold; color: var(--cream); text-decoration: underline;">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="tel:+917708980490" class="float-btn phone-btn">
+      <img src="icons/phone app icon.jpg" alt="Call Us">
+    </a>
+    <a href="https://www.instagram.com/sd_event_management_19/" target="_blank" class="float-btn insta-btn">
+      <img src="icons/insta icon.jpg" alt="Instagram">
+    </a>
+    <a href="https://wa.me/917708980490" target="_blank" class="float-btn whatsapp-btn">
+      <img src="icons/whatsapp icon.jpg" alt="WhatsApp">
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
