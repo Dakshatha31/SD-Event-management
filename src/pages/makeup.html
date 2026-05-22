@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup | SD Management</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .service-hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin-top: 60px;
+    }
+
+    .service-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-row {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 20px 0;
+      justify-content: center;
+    }
+
+    .gallery-thumb {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      border: 4px solid transparent;
+      object-fit: cover;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .gallery-thumb:hover {
+      transform: scale(1.1);
+      border-color: var(--maroon);
+    }
+
+    .service-desc {
+      max-width: 700px;
+      margin: 40px auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .enquiry-btn-container {
+      text-align: center;
+      margin: 40px 0 60px;
+    }
+
+    .btn-large {
+      padding: 15px 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <a href="../../index.html">
+          <img src="../assets/icons/Logo - SD purp.png" alt="SD Management" style="height: 80px;">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B1C1C" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <h1 class="section-heading" style="margin-top: 100px;">Makeup</h1>
+
+  <section class="service-hero">
+    <img src="../assets/photos/mu/mu2.JPG.jpeg" alt="Makeup" class="service-hero-img">
+  </section>
+
+  <div class="container">
+    <p class="service-desc">Expert bridal and event makeup artists skilled in traditional South Indian bridal looks,
+      silk saree draping assistance, and modern styles — helping you look radiant for every photograph.</p>
+
+    <!-- Gallery Row -->
+    <div class="gallery-row">
+      <img src="../assets/photos/mu/mu.jpeg" class="gallery-thumb" alt="Gallery image">
+      <img src="../assets/photos/mu/mu2.JPG.jpeg" class="gallery-thumb" alt="Gallery image">
+    </div>
+
+    <!-- Enquiry Button -->
+    <div class="enquiry-btn-container">
+      <a href="enquiry.html?service=Makeup" class="btn btn-large">Send Enquiry on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="birthday.html">Birthday Party</a></li>
+            <li><a href="wedding.html">Wedding</a></li>
+            <li><a href="corporate.html">Corporate Event</a></li>
+            <li><a href="arangetram.html">Arangetram</a></li>
+            <li><a href="return-gift.html">Return Gift</a></li>
+            <li><a href="makeup.html">Makeup</a></li>
+            <li><a href="wel_backdrop.html">Welcome Backdrop</a></li>
+            <li><a href="rental.html">Rental Enquiry</a></li>
+            <li><a href="idol.html">Idol Decoration</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="catering.html">Catering Services</a></li>
+            <li><a href="audio_lighting.html">Audio and Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Phone: +91 75300 10093</p>
+          <div class="footer-whatsapp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#FAF3E0">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2ZM17.16 16.57C16.94 17.18 16.06 17.7 15.42 17.84C14.88 17.96 14.12 18.04 11.46 16.93C8.04 15.52 5.84 12.03 5.67 11.8C5.5 11.57 4.26 9.93 4.26 8.24C4.26 6.55 5.12 5.73 5.46 5.38C5.76 5.07 6.22 4.93 6.64 4.93C6.78 4.93 6.9 4.94 7.02 4.94C7.39 4.94 7.57 4.96 7.82 5.56C8.12 6.28 8.86 8.09 8.95 8.28C9.04 8.47 9.16 8.7 9.04 8.94C8.91 9.17 8.82 9.29 8.63 9.5C8.45 9.71 8.24 9.97 8.08 10.13C7.9 10.32 7.7 10.52 7.92 10.9C8.14 11.28 8.9 12.52 10.02 13.52C11.45 14.81 12.63 15.22 13.04 15.39C13.41 15.55 13.85 15.52 14.13 15.22C14.48 14.85 14.91 14.22 15.34 13.62C15.68 13.14 16.07 13.2 16.48 13.35C16.9 13.5 19.12 14.61 19.57 14.84C20.02 15.07 20.32 15.18 20.43 15.37C20.54 15.56 20.54 16.34 20.17 17.11L17.16 16.57Z" />
+            </svg>
+            <a href="https://wa.me/917530010093" target="_blank"
+              style="font-weight: bold; color: var(--cream); text-decoration: underline;">Connect on WhatsApp</a>
+          </div>
+          <p style="margin-top: 15px;">Available Monday–Sunday, 9am–9pm</p>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <iframe
+            src="https://maps.google.com/maps?q=Narasimhanaikenpalayam,+Coimbatore,+Tamil+Nadu+641031&output=embed"
+            width="100%" height="150" style="border:0; border-radius: 8px; margin-bottom: 10px;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p>Narasimhanaikenpalayam,<br>North Coimbatore,<br>Tamil Nadu, India — 641031</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SD Management. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="tel:+917530010093" class="float-btn phone-btn">
+      <img src="../assets/icons/Phone app icon.jpg" alt="Call Us">
+    </a>
+    <a href="https://www.instagram.com/sd_event_management_19/" target="_blank" class="float-btn insta-btn">
+      <img src="../assets/icons/insta icon.jpg" alt="Instagram">
+    </a>
+    <a href="https://wa.me/917530010093" target="_blank" class="float-btn whatsapp-btn">
+      <img src="../assets/icons/whatsapp icon.jpg" alt="WhatsApp">
+    </a>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
