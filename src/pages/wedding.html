@@ -61,6 +61,41 @@
       padding: 15px 40px;
       font-size: 20px;
     }
+
+    .wedding-vaazha-decor {
+      display: block;
+      width: 150px;
+      height: auto;
+      margin: -12px 0 12px auto;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .service-hero {
+        height: 250px;
+        margin-top: 24px;
+      }
+
+      .wedding-vaazha-decor {
+        width: 96px;
+        margin-top: -8px;
+      }
+
+      .service-desc {
+        margin-top: 32px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wedding-vaazha-decor {
+        width: 72px;
+      }
+
+      .service-desc {
+        margin-top: 24px !important;
+      }
+    }
   </style>
 </head>
 
@@ -97,25 +132,12 @@
   </section>
 
   <div class="container" style="position: relative; overflow: visible;">
-  <img 
-    src="../assets/icons/vaazha_b_l.png"
-    alt="Vaazha decoration"
-    class="vaazha-decor"
-    style="
-      position: absolute;
-      top: -20px;
-      left: -30px;
-      width: 210px;
-      height: auto;
-      max-width: none;
-      opacity: 0.95;
-      pointer-events: none;
-      z-index: 5;">
-
     <p class="service-desc" style="margin-top: 80px;">We create elegant and visually captivating wedding decor designed to make every celebration truly special and memorable. 
       From beautiful floral arrangements and creative stage concepts to stylish props and detailed venue styling, every element is thoughtfully planned to match the theme
        and atmosphere of the event.<br>Our focus is on maintaining a clean, graceful, and sophisticated look while adding creative touches that enhance the overall experience.
         Whether it is a traditional wedding or a modern celebration, we strive to create a stunning setup that reflects joy, beauty, and timeless elegance.</p>
+
+    <img src="../assets/icons/vaazha.png" alt="Vaazha decoration" class="wedding-vaazha-decor">
 
     <!-- Gallery Row -->
     <div class="gallery-row">

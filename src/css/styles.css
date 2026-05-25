@@ -413,6 +413,20 @@ footer {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .logo-container img {
+    height: 60px !important;
+    width: auto;
+  }
+
   .nav-links {
     display: none;
     position: absolute;
@@ -430,8 +444,66 @@ footer {
   .hamburger {
     display: block;
   }
+  .section {
+    padding: 56px 0;
+  }
+  .section-heading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .section-subheading {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  .hero-slider {
+    height: 320px;
+    margin-top: 78px;
+  }
+  .slider-btn {
+    width: 34px;
+    height: 34px;
+  }
   .grid-3 {
     grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .service-card-img {
+    height: 180px;
+  }
+  .service-card-content {
+    padding: 16px;
+  }
+  .service-card h3 {
+    font-size: 18px;
+  }
+  .service-card p {
+    font-size: 13px;
+  }
+  .service-hero {
+    height: 260px !important;
+    margin-top: 28px !important;
+  }
+  .service-desc {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    margin: 28px auto !important;
+  }
+  .gallery-row {
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+  .gallery-thumb {
+    width: 118px !important;
+    height: 118px !important;
+    flex: 0 0 118px;
+  }
+  .btn {
+    padding: 11px 24px;
+    max-width: 100%;
+  }
+  .btn-large {
+    font-size: 16px !important;
+    padding: 12px 24px !important;
   }
   .footer-grid {
     grid-template-columns: 1fr;
@@ -444,9 +516,38 @@ footer {
     justify-content: center;
     margin-top: 18px;
   }
+  .footer-bottom-img {
+    width: 180px;
+  }
   .footer-mahal-img {
     width: 100px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .hero-slider {
+    height: 260px;
+  }
+
+  .service-hero {
+    height: 220px !important;
+  }
+
+  .service-desc {
+    font-size: 14px !important;
   }
 }
 

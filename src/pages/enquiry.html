@@ -15,6 +15,26 @@
       border-radius: 8px;
       box-shadow: var(--box-shadow);
       border-top: 8px solid var(--maroon);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .enquiry-form .form-group,
+    .enquiry-form .submit-btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    .enquiry-vaazha {
+      position: absolute;
+      top: 150px;
+      right: 26px;
+      width: 210px;
+      height: auto;
+      object-fit: contain;
+      opacity: 1;
+      z-index: 1;
+      pointer-events: none;
     }
 
     .form-group {
@@ -48,6 +68,18 @@
       font-size: 18px;
       margin-top: 10px;
     }
+
+    @media (max-width: 768px) {
+      .enquiry-form {
+        padding: 220px 22px 28px;
+      }
+
+      .enquiry-vaazha {
+        top: 210px;
+        right: 12px;
+        width: 110px;
+      }
+    }
   </style>
 </head>
 
@@ -77,22 +109,19 @@
     </div>
   </nav>
 
-  <section class="section kolam-bg" style="margin-top: 80px;">
+  <section class="section kolam-bg" style="margin-top: 80px; position: relative; overflow: hidden;">
+    <img src="../assets/icons/vaazha.png" alt="Vaazha" class="enquiry-vaazha">
     <div class="container">
       <h1 class="section-heading">Send Us an Enquiry</h1>
       <h3 class="section-subheading" id="service-subtitle">Enquiry for: General</h3>
 
-      <form class="enquiry-form" id="enquiryForm" style="position:relative;">
+      <form class="enquiry-form" id="enquiryForm">
          <img src="../assets/icons/manr.jpg" alt="" style="position: absolute; top: 70px; right: -150px;
          width: 130px; height: 500px;
          object-fit: contain;
          z-index: 1; pointer-events: none;">
          <img src="../assets/icons/manl.jpg" alt="" style="position: absolute; top: 60px; right: 590px;
          width: 180px; height: 500px;
-         object-fit: contain;
-         z-index: 1; pointer-events: none;">
-         <img src="../assets/icons/vaazha.png" alt="Vaazha" style="position: absolute; top: -100px; right: -330px;
-         width: 210px; height: auto;
          object-fit: contain;
          z-index: 1; pointer-events: none;">
         <div class="form-group">
